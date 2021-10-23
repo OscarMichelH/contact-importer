@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   devise_scope :user do
     devise_for :users, controllers: {
-      registrations: 'users/registrations'
+      registrations: 'users/registrations',
+      sessions: 'users/sessions'
     }
     unauthenticated do
       root 'devise/sessions#new'
