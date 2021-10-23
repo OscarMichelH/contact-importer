@@ -117,4 +117,14 @@ Rails.application.configure do
   # config.active_record.database_selector = { delay: 2.seconds }
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
+  config.action_mailer.default_url_options = { host: "contact-importer-production.herokuapp.com" }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address => "smtp-relay.sendinblue.com",
+    :port => 587,
+    :user_name => ENV['SEND_IN_BLUE_USERNAME'],
+    :password => ENV['SEND_IN_BLUE_PASSWORD'],
+    :authentication => 'login',
+    :enable_starttls_auto => true
+  }
 end
