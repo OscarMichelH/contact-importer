@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a042ddf-4013-4714-b2af-60f52c6d6952" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/contacts/import_csv.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/contact-importer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/contact-importer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/contact.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/contact.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/contacts/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contacts/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/file_importeds/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/file_importeds/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/contacts/import_csv.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contacts/import_csv.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/file_importeds/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/file_importeds/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/file_importeds/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/file_importeds/index.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

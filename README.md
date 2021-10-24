@@ -12,6 +12,12 @@ entered are correctly formatted.
 
 ### Setup
 
+Requirements:
+- Ruby 2.7.2
+- Rails 6+
+- Postgresql
+- Yarn
+
 Clone:
 ``` sh
 git clone git@github.com:OscarMichelH/contact-importer.git

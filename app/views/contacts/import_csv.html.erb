@@ -30,10 +30,9 @@
         <td><%= contact.franchise %></td>
         <td><%= contact.email %></td>
         <td>
-          <% @failed_contacts_msgs.each do |errors| %>
-            <% errors.uniq.each do |error| %>
+          <% @failed_contacts_msgs[i].each do |error| %>
               - <%= error %>
-             <% end %>
+              <br>
           <% end %>
         </td>
       </tr>

@@ -7,7 +7,6 @@
     <tr>
       <th>Filename</th>
       <th>Status</th>
-      <th>User</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,7 +16,6 @@
       <tr>
         <td><%= file_imported.filename %></td>
         <td><%= file_imported.status %></td>
-        <td><%= file_imported.user_id %></td>
         <td><%= link_to 'Show', file_imported %></td>
         <td><%= link_to 'Edit', edit_file_imported_path(file_imported) %></td>
         <td><%= link_to 'Destroy', file_imported, method: :delete, data: { confirm: 'Are you sure?' } %></td>

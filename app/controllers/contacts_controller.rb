@@ -66,7 +66,7 @@ class ContactsController < ApplicationController
         headers[header] = i
       }
 
-      file = FileImported.new(filename: params[:attachment].original_filename, status: 'Terminated', user_id: current_user.id)
+      file = FileImported.new(filename: params[:attachment].original_filename, status: 'Processing', user_id: current_user.id)
       file.save!
 
       @sucess_contacts = []
@@ -78,7 +78,7 @@ class ContactsController < ApplicationController
         phone = workbook.row(row)[headers[params['phone_header']]]&.to_s
         address = workbook.row(row)[headers[params['address_header']]]&.to_s
         credit_card = workbook.row(row)[headers[params['credit_card_header']]]&.to_s
-        franchise = CreditCardDetector::Detector.new(credit_card)&.brand_name || 'Not Valid'
+        franchise = CreditCardDetector::Detector.new(credit_card)&.brand_name rescue nil
         email = workbook.row(row)[headers[params['email_header']]]&.to_s
         contact = Contact.new(name: name, birthdate: birthdate, phone: phone,
         address: address, credit_card: hide_cc(credit_card), franchise: franchise, email: email,
@@ -88,8 +88,10 @@ class ContactsController < ApplicationController
         else
           @failed_contacts << contact
           @failed_contacts_msgs << contact.errors.to_a
-          contact.errors = []
         end
+
+        file.status = @sucess_contacts.count.positive? ? 'Finished' : 'Failed'
+        file.save!
       end
     else
       @file_path = params[:contact][:attachment].path
@@ -118,6 +120,6 @@ class ContactsController < ApplicationController
     end
 
    def hide_cc(cc_num)
-     '************' + cc_num.last(4)
+     '************' + cc_num.last(4) if cc_num
    end
 end
