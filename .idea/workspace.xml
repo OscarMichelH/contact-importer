@@ -3,12 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="4a042ddf-4013-4714-b2af-60f52c6d6952" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/contact.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/contact.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/contacts/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contacts/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/contacts/import_csv.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contacts/import_csv.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/file_importeds/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/file_importeds/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/file_importeds/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/file_importeds/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/file_importeds/_headers_match.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/file_importeds/_headers_match.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/contacts_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/contacts_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/file_importeds_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/file_importeds_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/requests/contacts_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/requests/file_importeds_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/routing/contacts_routing_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/routing/file_importeds_routing_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/contacts/edit.html.erb_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/views/contacts/edit.html.erb_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/contacts/index.html.erb_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/views/contacts/index.html.erb_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/contacts/new.html.erb_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/views/contacts/new.html.erb_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/contacts/show.html.erb_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/views/contacts/show.html.erb_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/file_importeds/edit.html.erb_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/views/file_importeds/edit.html.erb_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/file_importeds/index.html.erb_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/views/file_importeds/index.html.erb_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/file_importeds/new.html.erb_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/views/file_importeds/new.html.erb_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/file_importeds/show.html.erb_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/views/file_importeds/show.html.erb_spec.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

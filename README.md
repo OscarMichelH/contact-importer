@@ -47,12 +47,20 @@ SEND_IN_BLUE_USERNAME: 'oscarmichelh@gmail.com'
 Setup database tables:
 ``` sh
 rails db:setup
+rails db:migrate
 ```
 Run app:
 ``` sh
 rails s
 ```
 
+## Testing
+``` sh
+rails db:migrate RAILS_ENV=test
+```
+``` sh
+rspec
+```
 
 ## Usage
 
