@@ -2,66 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a042ddf-4013-4714-b2af-60f52c6d6952" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/contacts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/file_importeds.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/file_importeds_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/contacts_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/file_importeds_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/contact.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/file_imported.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/contacts/_contact.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/contacts/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/contacts/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/contacts/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/contacts/index.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/contacts/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/contacts/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/contacts/show.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/file_importeds/_file_imported.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/file_importeds/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/file_importeds/_headers_match.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/file_importeds/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/file_importeds/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/file_importeds/index.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/file_importeds/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/file_importeds/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/file_importeds/show.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20211023224546_create_contacts.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20211023232233_create_file_importeds.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/controllers/contacts_controller_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/controllers/file_importeds_controller_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/factories/contacts.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/factories/file_importeds.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/factories/users.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/helpers/contacts_helper_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/helpers/file_importeds_helper_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/contact_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/file_imported_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/requests/contacts_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/requests/file_importeds_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/routing/contacts_routing_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/routing/file_importeds_routing_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/contacts/edit.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/contacts/index.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/contacts/new.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/contacts/show.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/file_importeds/edit.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/file_importeds/index.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/file_importeds/new.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/file_importeds/show.html.erb_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/contacts/import_csv.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/contact-importer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/contact-importer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/contact.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/contact.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/contacts/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contacts/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/file_importeds/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/file_importeds/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,6 +199,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/contact_importer@user_spec.rcov" NAME="user_spec Coverage Results" MODIFIED="1635029674929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="contact-importer" />
-    <SUITE FILE_PATH="coverage/contact_importer@Development__contact_importer.rcov" NAME="Development: contact-importer Coverage Results" MODIFIED="1635037794519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="contact-importer" />
+    <SUITE FILE_PATH="coverage/contact_importer@Development__contact_importer.rcov" NAME="Development: contact-importer Coverage Results" MODIFIED="1635042328841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="contact-importer" />
   </component>
 </project>

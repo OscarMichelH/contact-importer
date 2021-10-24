@@ -49,6 +49,8 @@
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.9, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="credit_card_detector (v0.4, ruby-2.7.2-p137) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="delayed_job (v4.1.9, ruby-2.7.2-p137) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="delayed_job_active_record (v4.1.5, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="devise (v4.8.0, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.4.4, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.10.0, ruby-2.7.2-p137) [gem]" level="application" />
@@ -132,6 +134,9 @@
         <option value="benchmark" />
         <option value="channel" />
         <option value="controller" />
+        <option value="delayed_job" />
+        <option value="delayed_job:active_record" />
+        <option value="delayed_job:upgrade" />
         <option value="devise" />
         <option value="devise:controllers" />
         <option value="devise:install" />
@@ -193,6 +198,9 @@
         <option value="benchmark" />
         <option value="channel" />
         <option value="controller" />
+        <option value="delayed_job" />
+        <option value="delayed_job:active_record" />
+        <option value="delayed_job:upgrade" />
         <option value="devise" />
         <option value="devise:controllers" />
         <option value="devise:install" />

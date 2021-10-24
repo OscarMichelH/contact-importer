@@ -66,25 +66,31 @@ class ContactsController < ApplicationController
         headers[header] = i
       }
 
-      file = FileImported.new(filename: params[:attachment].original_filename, status: 'Processing', user_id: current_user.id)
+      file = FileImported.new(filename: params[:attachment].original_filename, status: 'Terminated', user_id: current_user.id)
       file.save!
 
-      contacts = []
+      @sucess_contacts = []
+      @failed_contacts = []
+      @failed_contacts_msgs = []
       (workbook.first_row+1..workbook.last_row).each do |row|
-        name = workbook.row(row)[headers[params['name_header']]]
-        birthdate = workbook.row(row)[headers[params['birthdate_header']]]
-        phone = workbook.row(row)[headers[params['phone_header']]]
-        address = workbook.row(row)[headers[params['address_header']]]
-        credit_card = workbook.row(row)[headers[params['credit_card_header']]]
+        name = workbook.row(row)[headers[params['name_header']]]&.to_s
+        birthdate = workbook.row(row)[headers[params['birthdate_header']]]&.to_s
+        phone = workbook.row(row)[headers[params['phone_header']]]&.to_s
+        address = workbook.row(row)[headers[params['address_header']]]&.to_s
+        credit_card = workbook.row(row)[headers[params['credit_card_header']]]&.to_s
         franchise = CreditCardDetector::Detector.new(credit_card)&.brand_name || 'Not Valid'
-        email = workbook.row(row)[headers[params['credit_card_header']]]
-        contacts << Contact.new(name: name, birthdate: birthdate, phone: phone,
-        address: address, credit_card: credit_card, franchise: franchise, email: email,
+        email = workbook.row(row)[headers[params['email_header']]]&.to_s
+        contact = Contact.new(name: name, birthdate: birthdate, phone: phone,
+        address: address, credit_card: hide_cc(credit_card), franchise: franchise, email: email,
                                 user_id: current_user.id)
+        if contact.save
+          @sucess_contacts << contact
+        else
+          @failed_contacts << contact
+          @failed_contacts_msgs << contact.errors.to_a
+          contact.errors = []
+        end
       end
-
-
-      redirect_to file_importeds_path, notice: "Processing file"
     else
       @file_path = params[:contact][:attachment].path
       workbook = Roo::Spreadsheet.open(@file_path)
@@ -96,8 +102,6 @@ class ContactsController < ApplicationController
 
       render 'home/index'
     end
-
-
   end
 
 
@@ -112,4 +116,8 @@ class ContactsController < ApplicationController
     def contact_params
       params.require(:contact).permit(:name, :birthdate, :phone, :address, :credit_card, :franchise, :email, :user_id)
     end
+
+   def hide_cc(cc_num)
+     '************' + cc_num.last(4)
+   end
 end

@@ -1,0 +1,43 @@
+<% if @sucess_contacts %>
+  <h5>Success contacts created: </h5>
+  <%= @sucess_contacts.count %>
+  <br>
+  <hr>
+  <h5>Failed contacts</h5>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Birthdate</th>
+      <th>Phone</th>
+      <th>Address</th>
+      <th>Credit card</th>
+      <th>Franchise</th>
+      <th>Email</th>
+      <th>Error</th>
+      <th colspan="3"></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @failed_contacts.each_with_index do |contact, i| %>
+      <tr>
+        <td><%= contact.name %></td>
+        <td><%= contact.birthdate %></td>
+        <td><%= contact.phone %></td>
+        <td><%= contact.address %></td>
+        <td><%= contact.credit_card %></td>
+        <td><%= contact.franchise %></td>
+        <td><%= contact.email %></td>
+        <td>
+          <% @failed_contacts_msgs.each do |errors| %>
+            <% errors.uniq.each do |error| %>
+              - <%= error %>
+             <% end %>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+<% end %>
