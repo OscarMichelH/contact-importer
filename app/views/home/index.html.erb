@@ -1,3 +1,16 @@
 <div class="row">
   <h1>Imported Files Summary</h1>
+  <div class="container border-1 rounded-1 pt-3">
+    <% if !@headers %>
+      <%= form_for(Contact.new, url: import_csv_contacts_url ) do |f| %>
+        <label class="btn btn-secondary btn-file">
+          Select CSV File
+          <%= f.file_field :attachment %>
+        </label>
+        <%= f.submit "Upload" %>
+      <% end %>
+    <% end %>
+  </div>
+
+  <%= render 'file_importeds/headers_match' %>
 </div>

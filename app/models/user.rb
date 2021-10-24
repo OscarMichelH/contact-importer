@@ -14,6 +14,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable, authentication_keys: [:login]
 
+  has_many :contacts
+
   private
 
   def self.find_for_database_authentication(warden_conditions)
